@@ -6,11 +6,11 @@
 
 ## FAILURE TO FILL OUT THE INFORMATION BELOW CORRECTLY WILL CAUSE POINTS TO BE DEDUCTED FROM YOUR ASSIGNMENT.
 
-## Student Name  : Name here
+## Student Name  : Yan Peng
 
-## Student ID    : ID here
+## Student ID    : 921759056
 
-## Student Email : Email here
+## Student Email : ypeng6@sfsu.edu
 
 ## Purpose of Repository
 

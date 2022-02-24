@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Postimage</title>
+</head>
+
+<body>
+    <h1>Create a Post</h1>
+    <hr>
+    <form action="upload.php" method="post">
+        <p>Please complete the form below to create a post</p>
+        <label for="posttitle">Title</label>
+        <input type="text" id="posttitle" name="posttitle" required><br><br>
+        <label for="description">Description</label><br>
+        <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
+        <label for="img">Select an image:</label>
+        <input type="file" id="img" name="img" required><br><br>
+        <input type="checkbox" id="auserp" name="auserp" required>
+        <label for="auserp">You agree to <a href="https://en.wikipedia.org/wiki/Acceptable_use_policy">Acceptable
+                Use Policy </a> for uploading images. </label><br><br>
+        By clicking here -> <button type="submit">Upload</button> to submit your image.
+    </form>
+</body>
+
+</html>
