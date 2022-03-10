@@ -1,0 +1,347 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+    overflow-y: scroll;
+}
+body::-webkit-scrollbar{
+    display:none;
+}
+
+/**************** Navigation ****************/
+header {
+    overflow: hidden;
+    background-color: white;
+    font-family: sans-serif;
+    width: 100vw;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+header nav li {
+    float: left;
+}
+
+header nav li a {
+    display: block;
+    color: black;
+    text-align: left;
+    padding: 20px 50px;
+    text-decoration: none;
+}
+
+header nav li a.active {
+    background-color: rgb(98, 187, 209);
+}
+
+header nav li a:hover {
+    background-color: rgb(98, 187, 209);
+    color: rgb(15, 14, 14);
+}
+
+/****************Form****************/
+.wrap {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+
+}
+
+.wrap .form {
+    width: 980px;
+    height: 650px;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 25px 45px rgba(14, 13, 13, 0.2);
+}
+
+.wrap .form .left {
+    width: 330px;
+    height: 700px;
+    display: inline-block;
+}
+
+.wrap .form .left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    width: 500px;
+    height: 700px;
+    background-position: center;
+}
+
+.wrap .form .right {
+    width: 650px;
+    height: 650px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.wrap .form .right .right-content {
+    width: 70%;
+    padding-top: 75px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+}
+
+.wrap .form .right .right-content .title {
+    font-size: 26px;
+    color: #0c3483;
+    font-weight: bold;
+    padding-bottom: 0px;
+}
+
+/*all text input box*/
+.wrap .form .right .right-content .input-group {
+    font-size: 20px;
+    padding: 25px 0px;
+    width: 100%;
+    margin-bottom: 50px 0;
+    padding-left: 0px;
+}
+
+/*all text input bottom line and input styling*/
+.wrap .form .right .right-content .input-group .text-input {
+    border: none;
+    border-bottom: 2px solid rgb(82, 176, 189);
+    background: transparent;
+    outline: none;
+    font-size: 25px;
+    width: 100%;
+    color: black;
+}
+
+.wrap .form .right .right-content label {
+    font-size: 16px;
+    font-weight: 400;
+    color: #0c3483;
+    display: none;
+    padding: 10px 50px;
+}
+
+.wrap .form .right .right-content .input-group .text-input::placeholder {
+    color: rgb(28, 82, 133);
+    opacity: 1;
+    font-size: 16px;
+
+}
+
+.wrap .form .right .right-content .center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+/*login, register,create post button*/
+.wrap .form .right .right-content button {
+    padding: 20px 25px;
+    margin-bottom: 1rem;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    transition: .5s;
+    background-color: palevioletred;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+/*login,register,creat post button hover*/
+.wrap .form .right .right-content button:hover {
+    background-color: rgb(218, 93, 191);
+}
+
+/*two buttons same row*/
+.wrap .form .right .right-content .button-group {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    margin-top: 1rem;
+}
+
+/*clear button*/
+.wrap .form .right .right-content .button-group .button-re {
+    background-color: #1680e3;
+}
+
+.wrap .form .right .right-content .button-group .button-re:hover {
+    background-color: rgb(83, 198, 226);
+}
+
+.wrap .form .right .right-content .form-footer {
+    padding-top: 1rem;
+    color: #0c3483;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 16px;
+
+}
+
+.wrap .form .right .right-content .form-footer a {
+    color: palevioletred;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.wrap .form .right .right-content .form-footer a:hover {
+    color: lightpink;
+}
+
+/*styling all check box and related words,policy link */
+.wrap .form .right .right-content .checkbox-group {
+    font-size: 100%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-left: 0px;
+}
+
+.wrap .form .right .right-content .checkbox-group span {
+    color: #0c3483;
+    font-size: medium;
+    font-family: sans-serif;
+}
+
+.wrap .form .right .right-content .checkbox-group input[type='checkbox'] {
+    margin-right: 10px;
+}
+
+.wrap .form .right .right-content .checkbox-group a {
+    color: rgb(38, 0, 255);
+}
+
+.wrap .form .right .right-content .checkbox-group a:hover {
+    color: rgb(116, 211, 214);
+}
+
+/*styling all upload file button and related area*/
+.wrap .form .right .right-content input[type=file] {
+    font-size: 16px;
+    color: #68acd3;
+    border: 2px solid;
+    padding: 10px 0px;
+    width: 100%;
+}
+
+.wrap .form .right .right-content input[type=file]:hover {
+    box-shadow: inset 0px 0px 2px rgb(146, 199, 206);
+    background: #cfdadf;
+}
+
+.wrap .form .right .right-content .file-upload-group {
+    border-bottom: none;
+    width: 100%;
+    padding-top: 10px;
+}
+
+
+/*styling description text area*/
+.wrap .form .right .right-content textarea {
+    border: 2px solid rgb(82, 176, 189);
+    padding: 0px;
+    width: 100%;
+    height: 150px;
+    color: black;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 0rem;
+}
+
+.wrap .form .right .right-content #select-image {
+    text-align: left;
+    font-family: sans-serif;
+    color: #0c3483;
+    margin-top: 0px;
+}
+
+/************* View Post **************/
+section .left-area {
+    float: left;
+    width: 13%;
+    height: 100vh;
+    background-color: rgb(21, 65, 104);
+    padding: 10px;
+    text-align: center;
+
+}
+
+section .right-post-area {
+    float: flex;
+    padding: 10px;
+    width: 100%;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    height: 100vh;
+}
+
+.right-post-area .image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    gap: 1.5rem;
+
+}
+
+.right-post-area .img {
+    object-fit: cover;
+    margin: 20px 30px;
+    margin-left: 10%;
+    float: left;
+   
+}
+
+section .left-area h2 {
+    color: white;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+section .left-area p {
+    font-family: sans-serif;
+    color: #e8eef1;
+    font-size: 20px;
+    line-height: 2em;
+    margin-bottom: 20px;
+}
+
+/****************** Footer ******************/
+footer {
+    position: fixed;
+    bottom: 5px;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    font-family: sans-serif;
+    line-height: 6px;
+    font-size:small;
+}
+
+footer p {
+    color: white;
+}

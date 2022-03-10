@@ -4,29 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Viewpost</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
 </head>
 
 <body>
-    <h1>This is Viewpost </h1>
-    <hr>
-    <div id="title">
-        <h2>Title</h2>
-        <p>This is the world</p>
-    </div>
-    <div id="author">
-        <h2>Author</h2>
-        <p>Yan Peng</p>
-    </div>
-    <div id="time">
-        <h2>Created Time</h2>
-        <p><time datetime="2022-07-07 20:00:00">July 7</time></p>
-    </div>
-    <div id="img">
-        <h2>Post image:</h2>
-        <img src="https://fakeimg.pl/100x100/?text=World&font=lobster" alt="world image" title="world image">
-    </div>
-
+    <header>
+        <nav>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="postimage.html">Post Image</a></li>
+                <li><a class="active" href="viewpost.html">View Post</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="left-area">
+                <h2>This is post view</h2><br><br>
+                <p>* Title</p>
+                <p>This is cat world</p>
+                <p>* Author</p>
+                <p>Yan Peng</p>
+                <p>* Created Time</p>
+                <p>March 3rd, 2022</p>
+            </div>
+            <div class="right-post-area">
+                <div class="image-container">
+                    <div class="img"> <img src="../image/yellowcat.gif" alt="yellowcat" height="300"></div>
+                    <div class="img"><img src="../image/graycat.png" alt="cat4" height="300"></div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+<footer>
+    <footer>
+        <p>Image Reference </p>
+        <p>"Scenic Nature Background", https://pngtree.com/freebackground/scenic-nature-background_251535.html, Created Oct
+            14, 2015, https://pngtree.com/legal/license-terms</p>
+        <p>"collection of cat png",http://clipart-library.com/free/cat-png-gif.html,http://clipart-library.com/terms.html</p>
+    </footer>
+</footer>
 
 </html>

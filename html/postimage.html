@@ -4,24 +4,76 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Postimage</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
 </head>
 
 <body>
-    <h1>Create a Post</h1>
-    <hr>
-    <form action="upload.php" method="post">
-        <p>Please complete the form below to create a post</p>
-        <label for="posttitle">Title</label>
-        <input type="text" id="posttitle" name="posttitle" required><br><br>
-        <label for="description">Description</label><br>
-        <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
-        <label for="img">Select an image:</label>
-        <input type="file" id="img" name="img" required><br><br>
-        <input type="checkbox" id="auserp" name="auserp" required>
-        <label for="auserp">You agree to <a href="#">Acceptable Use Policy </a> for uploading images. </label><br><br>
-        By clicking here -> <button type="submit">Upload</button> to submit your image.
-    </form>
+    <div class="background">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                    <li><a class="active" href="postimage.html">Post Image</a></li>
+                    <li><a href="viewpost.html">View Post</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="wrap">
+                <div class="form">
+                    <div class="left">
+                        <img src="../image/boat.jpg"></div>
+                    <div class="right">
+                        <div class="right-content">
+                            <h1 class="title">Create a Post</h1>
+                            <form action="upload.php" method="post" class="contact-form">
+
+                                <div class="input-group">
+                                    <label for="posttitle">Title</label>
+                                    <input class="text-input" type="text" id="posttitle" name="posttitle"
+                                        placeholder="Enter Image Title Here" required>
+                                </div>
+                                <div>
+                                    <label for="description">Description</label>
+                                    <textarea name="description" rows="8" cols="50" placeholder="Enter Description Here"
+                                        required></textarea>
+                                </div>
+                                <div class="input-group file-upload-group">
+                                    <div id="select-image">
+                                        <p>Select an image to upload</p>
+                                    </div>
+                                    <input type="file" id="img" name="img" required>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" name="auserp" required>
+                                    <span>I agree to the&nbsp; </span> <a href="#">Acceptable
+                                        Use Policy</a><span>&nbsp;for uploading images.</span>
+
+                                </div>
+                                <div class="button-group">
+                                    <button class="button-re" type="reset">Clear</button>
+                                    <button class="button-sub" type="submit">Create Post</button>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </main>
+    </div>
 </body>
+<footer>
+    <footer>
+        <p>Image Reference </p>
+        <p>"Scenic Nature Background", https://pngtree.com/freebackground/scenic-nature-background_251535.html, Created Oct
+            14, 2015, https://pngtree.com/legal/license-terms</p>
+        <p>"collection of cat png",http://clipart-library.com/free/cat-png-gif.html,http://clipart-library.com/terms.html</p>
+    </footer>
+</footer>
 
 </html>

@@ -4,22 +4,66 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+
 </head>
 
 <body>
-    <h1>Log in to Your Account </h1>
-    <hr>
-    <form id="login" action="login.php">
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username" placeholder="Username" required><br><br>
-        <label for="psw">Password</label>
-        <input type="password" id="psw" name="psw" placeholder="8 characters minimum" pattern=".{8,}"
-            title="8 characters minimum" required><br><br>
-        <button type="submit">Log in</button><br>
-        Need to register ?-><a href="registration.html"> Register
-        </a>
-    </form>
+    <div class="background">
+        <header>
+            <nav>
+                <ul>
+                    <li><a class="active" href="login.html">Login</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                    <li><a href="postimage.html">Post Image</a></li>
+                    <li><a href="viewpost.html">View Post</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="wrap">
+                <div class="form">
+                    <div class="left">
+                        <img src="../image/boat.jpg">
+                    </div>
+                    <div class="right">
+                        <div class="right-content">
+                            <img src="../image/user.png" class="center-img" alt="userlogo">
+                            <h1 class="title">User Login </h1>
+                            <form id="login" action="login.php">
+                                <div class="input-group">
+                                    <label for="username">Username</label>
+                                    <input class="text-input" type="text" id="username" name="username"
+                                        placeholder="Enter Username" required />
+                                </div>
+                                <div class="input-group">
+                                    <label for="psw">Password</label>
+                                    <input class="text-input" type="password" id="psw" name="psw"
+                                        placeholder="Enter Password (6 characters minimum)" pattern=".{6,}"
+                                        title="Password" required />
+                                </div>
+                                <div class="button-group">
+                                    <button class="button-sub" type="submit">Log In</button>
+                                </div>
+                                <div class="form-footer">
+                                    Need an account? <a href="registration.html">Sign Up</a>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
+<footer>
+    <p>Image Reference </p>
+    <p>"Scenic Nature Background", https://pngtree.com/freebackground/scenic-nature-background_251535.html, Created Oct
+        14, 2015, https://pngtree.com/legal/license-terms</p>
+    <p>"collection of cat png",http://clipart-library.com/free/cat-png-gif.html,http://clipart-library.com/terms.html</p>
+</footer>
 
 </html>
