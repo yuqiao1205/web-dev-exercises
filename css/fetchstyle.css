@@ -1,0 +1,80 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+
+    display: grid;
+    grid-template-columns: repeat(4, 0fr);
+    gap: 2rem;
+    align-items: flex-start;
+    margin: 10px;
+}
+
+div .pic {
+    height: 200px;
+    width: 200px;
+
+}
+
+#image_count {
+    margin: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: large;
+
+}
+
+div .title {
+    padding: 10px;
+}
+
+div .post {
+    border: none;
+}
+
+/*button*/
+#getgif {
+    width: 100%;
+    margin-left: 25%;
+    margin-right: 25%;
+    align-items: center;
+    position: flex;
+    right: 0;
+    left: 0;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    display: inline-block;
+    margin: 0;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#getgif:hover{
+   background-color:lightblue;
+   color:black;
+}

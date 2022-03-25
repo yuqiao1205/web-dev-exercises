@@ -65,7 +65,7 @@ header nav li a:hover {
 
 .wrap .form {
     width: 980px;
-    height: 650px;
+    height: 670px;
     display: flex;
     border-radius: 20px;
     overflow: hidden;
@@ -74,7 +74,7 @@ header nav li a:hover {
 
 .wrap .form .left {
     width: 330px;
-    height: 700px;
+    height: 670px;
     display: inline-block;
 }
 
@@ -83,13 +83,13 @@ header nav li a:hover {
     height: 100%;
     object-fit: cover;
     width: 500px;
-    height: 700px;
+    height: 670px;
     background-position: center;
 }
 
 .wrap .form .right {
     width: 650px;
-    height: 650px;
+    height: 670px;
     background: white;
     display: flex;
     align-items: center;
@@ -115,23 +115,30 @@ header nav li a:hover {
 
 /*all text input box*/
 .wrap .form .right .right-content .input-group {
-    font-size: 20px;
-    padding: 25px 0px;
     width: 100%;
-    margin-bottom: 50px 0;
-    padding-left: 0px;
+    padding: 6px 0px;
+    height: 45px;
+    position:relative;
+    margin:20px 0;
+   
 }
 
 /*all text input bottom line and input styling*/
 .wrap .form .right .right-content .input-group .text-input {
-    border: none;
-    border-bottom: 2px solid rgb(82, 176, 189);
     background: transparent;
     outline: none;
-    font-size: 25px;
+    font-size: 20px;
     width: 100%;
-    color: black;
+    height: 100%;
+    border: none;
+    border-bottom: 2px solid rgb(223, 221, 217);
+   
 }
+
+.wrap .form .right .right-content .input-group .text-input:focus {
+    border-color: rgb(51, 78, 153);
+    /* box-shadow: inser 0 0 3px blue; */
+    }
 
 .wrap .form .right .right-content label {
     font-size: 16px;
@@ -139,13 +146,12 @@ header nav li a:hover {
     color: #0c3483;
     display: none;
     padding: 10px 50px;
+    
 }
 
 .wrap .form .right .right-content .input-group .text-input::placeholder {
-    color: rgb(28, 82, 133);
-    opacity: 1;
-    font-size: 16px;
-
+    color: rgb(72, 137, 197);
+    font-size: 14px;
 }
 
 .wrap .form .right .right-content .center-img {
@@ -218,8 +224,8 @@ header nav li a:hover {
     font-size: 100%;
     display: flex;
     align-items: center;
-    padding-bottom: 10px;
-    padding-left: 0px;
+    /* padding-bottom: 10px; */
+    padding-top: 22px;
 }
 
 .wrap .form .right .right-content .checkbox-group span {
@@ -229,7 +235,8 @@ header nav li a:hover {
 }
 
 .wrap .form .right .right-content .checkbox-group input[type='checkbox'] {
-    margin-right: 10px;
+    margin-right: 15px;
+    
 }
 
 .wrap .form .right .right-content .checkbox-group a {
@@ -257,7 +264,7 @@ header nav li a:hover {
 .wrap .form .right .right-content .file-upload-group {
     border-bottom: none;
     width: 100%;
-    padding-top: 10px;
+    padding-top: 0px;
 }
 
 
@@ -345,3 +352,19 @@ footer {
 footer p {
     color: white;
 }
+
+/********************error message*********************/
+form .error{
+    display:inline;
+    color:red;
+    margin:5px 0 5px 0px;
+    font-size: 15px;
+    text-align: center;
+}
+.password-requirment{
+    display: flex;
+    font-size: small;
+    font-family: sans-serif;
+    color: grey;
+}
+

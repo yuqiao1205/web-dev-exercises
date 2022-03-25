@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Registration</title>
     <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <script type="text/javascript" src="../js/validation.js"></script>
 </head>
 
 <body>
@@ -18,6 +19,7 @@
                     <li><a class="active" href="registration.html">Registration</a></li>
                     <li><a href="postimage.html">Post Image</a></li>
                     <li><a href="viewpost.html">View Post</a></li>
+                    <li><a href="home.html">Display Image</a></li>
                 </ul>
             </nav>
         </header>
@@ -29,49 +31,57 @@
                     <div class="right">
                         <div class="right-content">
                             <h1 class="title">Register</h1>
-                            <form action="login.php" method="post">
-
+                            <form name="myform"  method="post" id="registration">
+                                <div id="submit_log" class="error"></div>
                                 <div class="input-group">
                                     <label for="username">Username</label>
-                                    <input class="text-input" type="text" id="username" name="username"
-                                        placeholder="Enter Username Here" required>
+                                    <div id="username_message" class="error"></div>
+                                    <input class="text-input" id="username" name="username"
+                                        placeholder="Enter Username Here">
+
                                 </div>
                                 <div class="input-group">
                                     <label for="email">Email</label>
+                                    <div id="email_message" class="error"></div>
                                     <input class="text-input" type="email" id="email" name="email"
-                                        placeholder="Enter Email Here" required>
-
+                                        placeholder="Enter Email Here">
 
                                 </div>
                                 <div class="input-group">
-                                    <label for="psw">Password</label>
-                                    <input class="text-input" type="password" id="psw" name="psw"
-                                        placeholder="Enter Password (6 characters minimum)" pattern=".{6,}"
-                                        title="Six or more characters" required>
+                                    <label for="password">Password</label>
+                                    <div id="password_message" class="error"></div>
+                                    <input class="text-input" id="password" name="psw"
+                                        placeholder="Enter Password Here">
+                                    <div class="password-requirment">8 characters minimum and contain at least 1 number 1
+                                        symbol 1 uppercase</div><br>
+
                                 </div>
                                 <div class="input-group">
-                                    <label for="repword">Re-enter Password</label>
-                                    <input class="text-input" type="password" id="repword" name="repword"
-                                        placeholder="Re-enter Password" required>
+                                    <label for="re_enter_password">Re-enter Password</label>
+                                    <div id="re_enter_password_message" class="error"></div>
+                                    <input class="text-input" id="re_enter_password" name="repword"
+                                        placeholder="Re-enter Password">
+
                                 </div>
                                 <div class="checkbox-group">
-                                    <input type="checkbox" name="age" required> <span>I am 13+ years of age.</span>
+                                    <input class="makecheckbox" name="age" required> <span>I am 13+ years of age.</span>
                                 </div>
                                 <div class="checkbox-group">
-                                    <input type="checkbox" name="tos" required>
+                                    <input class="makecheckbox" name="tos" required>
                                     <span>I agree to the&nbsp; </span> <a href="#">TOS and Privacy
                                     </a><span> &nbsp;for uploading images. </span>
 
                                 </div>
                                 <div class="button-group">
 
-                                    <button class="button-re" type="reset">Clear</button>
-                                    <button class="button-sb" type="submit">Register</button>
+                                    <button class="button-re" id="reload">Cancel</button>
+                                    <button class="button-sb" id="submit">Register</button>
                                 </div>
                                 <div class="form-footer">
                                     Already have an account? <a href="login.html"> Log In </a>
                                 </div>
                             </form>
+
                         </div>
                     </div>
                 </div>
