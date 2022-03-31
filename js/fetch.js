@@ -96,13 +96,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // bind on click to fade out and remove posts and update number of photos
     document.body.addEventListener('mousedown', function (e) {
-        if (e.target.nodeName === "IMG") {
+
+        if (e.target.nodeName === "IMG" || (e.target.nodeName === "DIV" && e.target.classList.contains('title'))) {
             let postElement = findPost(e.target);
             fade(postElement, () => {
                 removePost(findPost(postElement));
                 updateCount();
             });
-
         }
+
+
     }, false);
 })
